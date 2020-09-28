@@ -1,0 +1,35 @@
+
+
+
+.page_login {
+    color: #2b0548;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#forms {
+    width: 80%;
+    margin: 0px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+#input_forms {
+    margin-bottom: 20px;
+}
+
+#form_login {
+    width: 40%;
+}
+
+#divider {
+    width: 20%;
+}
+
+#form_register {
+    width: 40%;
+}
