@@ -9,23 +9,20 @@
             // Inclusão de Páginas
 
             $pages = [
-                'users',
+                'Login',
+                'Register',
+                'Eventos',
             ];
 
             $secoes = [
                 'home',
-                'login',
-                'create_events', 
-                'list_events',
-                'login_organizer',
-                'register_organizer',  
+                'login', 
+                'register',
+                'create_events'
             ];
 
-            
-
-            $arqs = $_GET['pages'];
+            $arqs = $_GET['page'];
             $sec = $_GET['sec'];
-            
 
             if (in_array($arqs, $pages) && in_array($sec, $secoes)) { //existe esta secao
                 include("pages/" . $arqs . "/" . $sec . ".php");

@@ -13,28 +13,23 @@ html, body, #root {
   height: 100vh;
 }
 
-/* body {
+body {
   background-color: #F0F0F7;
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
 
-/* .home_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
-/* body,
+body,
 input,
 button,
 textarea {
   font:400 1.6rem Roboto Slab;
-} */
+}
 
-/* @media (min-width: 700px) {
+@media (min-width: 700px) {
   :root {
       font-size: 62.5%;
   }
-} */
+}
