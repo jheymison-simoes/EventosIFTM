@@ -1,3 +1,26 @@
+:root {
+  font-size: 60%; 
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background-color: #F0F0F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 div#container {
   width: 100vw;
   height: 100vh;
@@ -50,11 +73,19 @@ div#container {
   transition: 0.5s;
 }
 
+#voltarLogin {
+  color: #2b0548;
+  text-decoration: none;
+}
+
+#voltarLogin:hover {
+ color:#531781;
+}
+
 #Background {
   flex: 1;
-  background-image: url("../img/background.png");
+  background-image: url("../img/backgroundHome.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: aqua;
 }
-

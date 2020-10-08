@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     include("../../data_base/connection.php");
 
@@ -12,14 +13,15 @@
 
     if($sel->num_rows){
 
-        $name = $sel->fetch_assoc();
+        $usuario = $sel->fetch_assoc();
 
         $_SESSION['logado'] = true;
-        $_SESSION['user'] = $name;
-        header("Location: index.php?page=Eventos&sec=create_event");
+        $_SESSION['user'] = $usuario;
+
+        header("Location: ../../index.php?page=Home&sec=home");
 
     } else {
-        header("Location: ");
+        header("Location: ../../index.php?page=Login&sec=login&erro=failed&email=$email");
     }
 
 ?>

@@ -1,28 +1,156 @@
+:root {
+    font-size: 60%; 
+}
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+html, body, #root {
+    height: 100vh;
+}
+  
+body {
+    background-color: #F0F0F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  
+body,
+input,
+button,
+textarea {
+    font:400 1.6rem Roboto Slab;
+}
+  
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
+  
+input#name {
+    background-image: url("../icons/Name.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
 
-.content_register {
+input#telefone {
+    background-image: url("../icons/Telefone.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+input#passwordConfirm {
+    background-image: url("../icons/PasswordConfirm.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+div#Background {
+    flex: 1;
+    background-image: url("../img/backgroundRegister.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aqua;
+} 
+
+div#container {
+    width: 100vw;
+    height: 100vh;
+    align-items: stretch;
+    display: flex;
+}
+  
+.content {
     width: 100%;
-    height: auto;
+    max-width: 550px;
     background-color: #E6E6F0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+  
+.logoContent {
+    margin-bottom: 5rem;
+}
 
-input#name {
-    background-image: url("../../Assets/icons/Name.png");
+#loginContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+    margin-bottom: 3.0rem;
+    width:  35rem;
+    height: 5rem;
+    margin-bottom: 3rem;
+    padding: 0 4.5rem;
+    
+    border: none;
+    outline: 0;
+    border-bottom: 2px solid #2b0548;
+    color: #2b0548;
+    background-color: #E6E6F0;
+}
+
+input#email {
+    background-image: url("../../Assets/icons/Email.png");
     background-repeat: no-repeat;
     background-position: 10px;
 }
 
-input#telefone {
-    background-image: url("../../Assets/icons/Telefone.png");
+input#password {
+    background-image: url("../../Assets/icons/Password.png");
     background-repeat: no-repeat;
     background-position: 10px;
 }
 
-input#passwordConfirm {
-    background-image: url("../../Assets/icons/PasswordConfirm.png");
-    background-repeat: no-repeat;
-    background-position: 10px;
+button#submit {
+    margin: 2rem 0 2.5rem;
+    width: 17rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 1.5rem;
+    outline: 0;
+    background-color: #2b0548;
+    color: white;
+    cursor: pointer;
 }
+
+button#submit:hover {
+    background-color: #531781;
+    transition: 0.5s;
+}
+
+span {
+    font-size: 1.8rem;
+}
+
+a#cadastrar {
+    color: #2b0548;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+a#cadastrar:hover {
+    color: #531781;
+}
+
+div#Background {
+  flex: 1;
+  background-image: url("../img/backgroundLogin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aqua;
+}  

@@ -1,0 +1,113 @@
+
+.EventItem {
+    background: white;
+    border: 1px solid #E6E6F0;
+    border-radius: 0.8rem;
+    margin-top: 2.4rem;
+    overflow: hidden;
+}
+
+.EventItem header {
+    padding: 3.2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.EventItem img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.EventItem div {
+    margin-left: 1.5rem; 
+}
+
+.EventItem div {
+  display: flex;
+  flex-direction: column;
+  font: 700 1.6rem Archivo;
+}
+
+.EventItem div strong#NameEvent {
+    font: 700 2.4rem Archivo;
+    color: #2b0548;
+}
+
+.EventItem div strong.spanStrongs {
+    color: #2b0548;
+    font: 700 1.6rem Archivo;
+}
+
+
+.EventItem > p {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.EventItem footer {
+    padding: 3.2rem 2rem;
+    background: #FAFAFC;
+    border-top: 1px solid #E6E6F0;
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.EventItem footer p strong {
+    color: #2b0548;
+    font-size: 1.6rem;  
+}
+
+.EventItem footer a {
+    width: 20rem;
+    height: 5.6rem;
+    background: #2b0548;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.4rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.EventItem div#imgWhatsapp {
+    background-image: url("../../Assets/icons/whatsapp.png");
+    background-color: #FAFAFC;
+}
+
+.EventItem footer a:hover{
+    background: #531781;
+}
+
+@media (min-width: 700px){
+    .EventItem header,
+    .EventItem footer {
+      padding: 3.2rem;
+    }
+  
+    .EventItem > p {
+      padding: 0 3.2rem;
+    }
+  
+    .EventItem footer p strong {
+      display: initial;
+    }
+  
+    .EventItem footer a {
+      width: 24.5rem;
+      font-size: 1.6rem;
+      justify-content: center;
+    }
+  
+    .EventItem footer a img {
+      margin-right: 1.6rem;
+    }
+}
+

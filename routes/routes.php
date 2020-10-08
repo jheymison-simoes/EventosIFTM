@@ -9,6 +9,7 @@
             // Inclusão de Páginas
 
             $pages = [
+                'Home',
                 'Login',
                 'Register',
                 'Eventos',
@@ -18,7 +19,12 @@
                 'home',
                 'login', 
                 'register',
-                'create_events'
+                'create_events',
+                'confirm_event',
+                'list_events',
+                'confirm_participate',
+                'my_events',
+                'my_participate'
             ];
 
             $arqs = $_GET['page'];
@@ -27,10 +33,10 @@
             if (in_array($arqs, $pages) && in_array($sec, $secoes)) { //existe esta secao
                 include("pages/" . $arqs . "/" . $sec . ".php");
             }else{ // nao existe
-                include("pages/home.php");
+                include("pages/Login/login.php");
             }
         }else {
-            include("pages/home.php");
+            include("pages/Login/login.php");
         }
     }
 ?>

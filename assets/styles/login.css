@@ -1,3 +1,37 @@
+:root {
+    font-size: 60%; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100vh;
+}
+
+body {
+    background-color: #F0F0F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+body,
+input,
+button,
+textarea {
+    font:400 1.6rem Roboto Slab;
+}
+  
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
+    
 div#container {
     width: 100vw;
     height: 100vh;
@@ -5,8 +39,9 @@ div#container {
     display: flex;
 }
   
-.content_login {
+.content {
     width: 100%;
+    max-width: 550px;
     background-color: #E6E6F0;
     display: flex;
     flex-direction: column;
@@ -84,4 +119,16 @@ a#cadastrar {
 a#cadastrar:hover {
     color: #531781;
 }
- 
+
+div#Background {
+  flex: 1;
+  background-image: url("../img/backgroundLogin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aqua;
+} 
+
+.error {
+    color: red;
+    font-size: 20px;
+}
